@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive; */
+/* font-family: 'Lexend Deca', sans-serif; */
+/* hsla(0, 0%, 100%, 0.75)
+hsl(0, 0%, 95%)
+hsl(31, 77%, 52%)
+hsl(184, 100%, 22%)
+hsl(179, 100%, 13%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  background-color: hsl(184, 100%, 22%);
+  min-height: 25rem;
+  max-width: 17rem;
+  padding: 2.5rem;
+  position: relative;
+}
+.item .logo {
+  margin-bottom: 1.5rem;
+}
+.item h1{
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2rem;
+}
+.item p {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 6rem;
+}
+.item button {
+  font-family: 'Lexend Deca', sans-serif;
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  text-align: center;
+  padding: 12px 18px;
+  bottom: 0;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  cursor:  pointer;
+}
+
+.one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+.two {
+  background-color: hsl(184, 100%, 22%);
+}
+.three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+.one button {
+  color: hsl(31, 77%, 52%);
+}
+.two button{
+  color: hsl(184, 100%, 22%);
+}
+.three button{
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  transition: 0.7s ease-in ;
+}
+
+
+#grid {
+  position: absolute;
+  display: flex;
+  align-self: flex-end;
+  background-color: #444;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid #444;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.grid {
+  text-decoration: none;
+  color: #fff;
+}
+#grid:hover {
+  background-color: rgb(5, 129, 109);
+  transition: 0.7s ease-in;
+}
+
+
+@media (max-width:800px){
+  .card{
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  .item{
+    min-width: 25rem;
+  }
+  .one {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .three{
+    border-radius: 0 0 10px 10px;
+  }
+  #grid {
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+  }
+}
+@media (max-width:375px) {
+  .item {
+    min-width: 20px;
+  }
+}

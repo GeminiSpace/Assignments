@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(37, 37, 37);
+}
+
+.grid {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: 
+    'redish redish yellowish'
+  ;
+  gap: 1rem;
+}
+.grid-2 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: 
+    'greenish blueish blueish'
+    'greenish bluetwo bluetwo'
+  ;
+  gap: 1rem;
+}
+.item {
+  padding: 6rem;
+  border: rgb(37, 37, 37) 1px solid;
+  border-radius: 5px;
+}
+.item-2{
+  padding: 3rem;
+  border: rgb(37, 37, 37) 1px solid;
+  border-radius: 5px;
+}
+.one {
+  background-color: orangered;
+  grid-area: redish;
+}
+.two {
+  background-color: orange;
+  grid-area: yellowish;
+}
+.three {
+  background-color: rgb(43, 170, 43);
+  grid-area: greenish;
+} 
+.four {
+  background-color: rgb(15, 180, 180);
+  grid-area: blueish;
+}
+.five {
+  background-color: rgb(15, 180, 180);
+  grid-area: bluetwo;
+}
+
+#flex {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 1rem;
+  padding: 1rem;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.flex {
+  text-decoration: none;
+  color: #444;
+}
+#flex:hover {
+  background-color: aqua;
+  transition: 0.7s ease-in;
+}
